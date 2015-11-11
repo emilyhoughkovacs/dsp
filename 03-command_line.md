@@ -12,7 +12,18 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+`>>` | takes output of command on left and *appends* it to file on right
+`pushd directoryname` | pushes pwd to stack and moves you to `directoryname`
+`pushd` | switches between current directory and last pushed directory
+`popd` | pops directory from stack and moves you to it
+`find` | `find STARTDIR -name "WILDCARD" -print` (with `| less` if large output) will find files with `WILDCARD` in title, recursively from STARTDIR.
+`cat > FILENAME` | You can write text directly to FILENAME. Press `command+D` when done.
+`grep` | grep "text to search" files_or_files_to_search (e.g. can do *.txt to search all txt files). only works for files within the pwd I believe
+`apropos` | Essentially searches for the keyword within man pages so you can choose which command you want, e.g. `apropos remove`. It also searches git commands.
+`env` | Shows what's in your current environment. It's like settings for your bash shell.
+`export` | set an environment variable. They are all caps. e.g. `export TESTING="blah"`
+`echo $VAR` | print environment variable. you have to use the $
+`unset` | sets an environment variable to ""
 
 ---
 
