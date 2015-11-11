@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I want to gain more familiarity with vim for reasons stated above (default sometimes). I've used all three in the past, in college, but am out of practice so I will need to brush up on some vim shortcuts. There's a cool game, [Vim Adventures](http://vim-adventures.com/) that I will use to practice.
 
 ---
 
@@ -61,6 +61,6 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I use Sublime. I have a shortcut set up so I can do `sublime filename` from the command line and it will create the file if it doesn't exist or open an existing file. The way I prefer to work is opening the entire directory in Sublime, so I can navigate through it graphically using the sidebar. This helps keep the project in mind and switch easily between files. I like that you can change the file type and it will adjust the colors accordingly for syntax highlighting. I also really like that the keyboard shortcuts are as expected (e.g. cmd+x, cmd+c, cmd+v). One shortcut I use a lot is split into lines (cmd+a, cmd+shift+L). This comes in handy if I am messing around with a small amount of output from SQL or Excel, or if I want to format some data for csv.
 
 ---
