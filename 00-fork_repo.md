@@ -49,7 +49,7 @@ Here's your first chance to practice this:
 
 What is your favorite [emoji](http://www.emoji-cheat-sheet.com/)?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+My two favorite emojis are :baby_chick: and :information_desk_person:.
 
 ---
 
