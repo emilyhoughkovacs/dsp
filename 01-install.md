@@ -39,7 +39,7 @@ Did you install Python 2 or 3? Why? How can you check the version of Python inst
 
 * I have Python 2.7 on my computer.
 * I am more comfortable with Python 2, having previously used it in my job. We actually used 2.6 because our cron machines were not updated to 2.7 yet but I wouldn't recommend that. (Actually I believe it is impossible to use 2.6 with Anaconda? That may have been one problem we ran in to...)
-* you can just type python and it will usually say the version. You can always do python --version in the command line to know for sure.
+* you can just type python and it will usually say the version. You can always do `python --version` in the command line to know for sure.
 
 ---
 
