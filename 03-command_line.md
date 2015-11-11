@@ -12,6 +12,8 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
+Command | Description
+------- | -----------
 `>>` | takes output of command on left and *appends* it to file on right
 `pushd directoryname` | pushes pwd to stack and moves you to `directoryname`
 `pushd` | switches between current directory and last pushed directory
