@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+The biggest difference is that a list is mutable (can be changed) and a tuple is immutable. Tuples are enclosed by parenthesis `()`, whereas lists use brackets `[]`. You can use tuples as keys for dictionary because they are immutable but you cannot use a list because it is mutable.
 
 ---
 
@@ -20,7 +20,7 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Unlike lists, every element in a set must be unique. Sets are unordered but lists are ordered. A set uses curly braces `{}`. A common example for using a set is uniqueness testing. In comparison, you would have to use a list to represent the Fibbonacci sequence, because its ordering matters and its elements are not unique (e.g. 1 appears twice). For a set named `setname`, you can find an element `x` by doing `x in setname` so that would be O(1). If you know the index of an element in a list you can access the element in O(1) by doing list[index], but to search if an element is in a list you must traverse the whole list taking O(n) time worst case scenario. 
 
 ---
 
@@ -50,24 +50,21 @@ a.
 date_start = '01-02-2013'    
 date_stop = '07-28-2015'
 ```
-
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+937 days
 
 b.  
 ```
 date_start = '12312013'  
 date_stop = '05282015'  
 ```
-
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+-82 days (because earlier date is date_stop)
 
 c.  
 ```
 date_start = '15-Jan-1994'      
 date_stop = '14-Jul-2015'  
 ```
-
->> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
+7850 days
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
