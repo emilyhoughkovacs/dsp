@@ -1,6 +1,6 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
-
+import re
 
 def donuts(count):
     """
@@ -18,8 +18,11 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
-
+    if count < 10:
+        num = str(count)
+    else:
+        num = 'many'
+    print 'Number of donuts: ' + num
 
 def both_ends(s):
     """
@@ -37,7 +40,11 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s) < 2:
+        print ''
+    else:
+        new_string = s[0:2] + s[-2:]
+        print new_string
 
 
 def fix_start(s):
@@ -56,7 +63,10 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    first_char = s[0]
+    rest = s[1:]
+    rest = rest.replace(first_char, '*')
+    print first_char + rest
 
 
 def mix_up(a, b):
@@ -74,7 +84,7 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    print b[0:2]+a[2:]+' '+a[0:2]+b[2:]
 
 
 def verbing(s):
@@ -111,8 +121,12 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
-
+    regexp = re.compile('not.*bad')
+    m = regexp.search(s)
+    if m == None:
+        print s
+    else:
+        print s.replace(m.group(), 'good')
 
 def front_back(a, b):
     """
@@ -130,4 +144,15 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    mid_a = len(a)/2
+    mid_b = len(b)/2
+    if len(a) % 2 == 0:
+        if len(b) % 2 == 0:
+            print a[:mid_a]+b[:mid_b]+a[mid_a:]+b[mid_b:]
+        else:
+            print a[:mid_a]+b[:mid_b+1]+a[mid_a:]+b[mid_b+1:]
+    else:
+        if len(b) % 2 == 0:
+            print a[:mid_a+1]+b[:mid_b]+a[mid_a+1:]+b[mid_b:]
+        else:
+            print a[:mid_a+1]+b[:mid_b+1]+a[mid_a+1:]+b[mid_b+1:]
