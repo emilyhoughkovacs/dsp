@@ -48,7 +48,7 @@ What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations 
 
 What does `xargs` do? Give an example of how to use it.
 
-`xargs` executes some command on a list of files or directories. A common usage is deleting specific files that you find using `grep` or `find`.
+`xargs` executes some command from standard input. This can be done on a list of files or directories. A common usage is deleting specific files that you find using `grep` or `find`.
 
 Example: `find . -name "*.txt" -print0 | xargs -0 -p -n 1 rm -r`
 The above command finds all text files in the directory and all subdirectories (-r), including those with spaces in the filename (-print0 and -0), and deletes them one at a time (-n 1), confirming deletion each time (-p)
