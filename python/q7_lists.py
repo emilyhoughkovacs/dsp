@@ -81,8 +81,16 @@ def remove_adjacent(nums):
     []
     """
     unique = []
-    for x in nums:
-        
+    if nums:
+        unique.append(nums[0])
+        for x in range(1, len(nums)):
+            cur = nums[x]
+            prev = nums[x-1]
+            if cur == prev:
+                continue
+            else:
+                unique.append(cur)
+    print unique
 
 
 def linear_merge(list1, list2):
@@ -94,9 +102,25 @@ def linear_merge(list1, list2):
 
     >>> linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc'])
     ['aa', 'bb', 'cc', 'xx', 'zz']
+    >>> linear_merge(['yy', 'xx', 'zz'], ['bb', 'cc'])
+    ['bb', 'cc', 'yy', 'xx', 'zz']
     >>> linear_merge(['aa', 'xx'], ['bb', 'cc', 'zz'])
     ['aa', 'bb', 'cc', 'xx', 'zz']
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    merged = []
+    x = 0
+    length = len(list1)+len(list2)
+    while list1 and list2:
+        if list1[0] < list2[0]:
+            merged.append(list1[0])
+            list1.pop(0)
+        else:
+            merged.append(list2[0])   
+            list2.pop(0)
+        x += 1
+    assert(x<=length)
+    print merged + list1 + list2
+
+
