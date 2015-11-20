@@ -48,11 +48,8 @@ Associate Professor: 12
 4 unique email domains:
 
 email.chop.edu: 1
-
 upenn.edu: 12
-
 cceb.med.upenn.edu: 1
-
 mail.med.upenn.edu: 23
 
 Place your code in this file: [advanced_python_regex.py](python/advanced_python_regex.py)
@@ -120,17 +117,13 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 Print the first 3 key and value pairs of the dictionary:
 
 '(Andrea, Troxel)': [' ScD', 'Professor of Biostatistics', 'atroxel@mail.med.upenn.edu'],
-
 '(Dawei, Xie)': [' PhD', 'Assistant Professor of Biostatistics', 'dxie@upenn.edu'],
-
 '(Sharon, Xie)': [' Ph.D.', 'Associate Professor of Biostatistics', 'sxie@mail.med.upenn.edu'],
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Sort by last name and print the first 3 key and value pairs.  
 
 ('Scarlett', 'Bellamy'): [' Sc.D.', 'Associate Professor of Biostatistics', 'bellamys@mail.med.upenn.edu']
-
 ('Warren', 'Bilker'): ['Ph.D.', 'Professor of Biostatistics', 'warren@upenn.edu']
-
 ('Matthew', 'Bryan'): [' PhD', 'Assistant Professor of Biostatistics', 'bryanma@upenn.edu']
 
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
