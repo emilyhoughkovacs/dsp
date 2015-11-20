@@ -31,4 +31,6 @@ cohens_d = (first_mean-others_mean)/s
 print cohens_d
 ```
 Result: *-0.089*<br>
-The difference in means for total birthweight is 0.089 standard deviations. The average firstborn is 7.20 lbs and the average other child is 7.33. According to [this site](http://rpsychologist.com/d3/cohend/), a small effect would be between 0.2 and 0.5. Given this knowledge, I would say the difference in birthweight between firstborns and other pregnancies is insignificant.
+The difference in means for total birthweight is 0.089 standard deviations. The average firstborn is 7.20 lbs and the average other child is 7.33.<br>
+The difference in pregnancy length has a Cohen's D of 0.029 standard deviations. The effect size of birth order on birth weight is about three times greater than the effect size of pregnancy term.<br>
+According to [this site](http://rpsychologist.com/d3/cohend/), however, a small effect would be between 0.2 and 0.5. Given this knowledge, I would say the difference in birthweight between firstborns and other pregnancies is insignificant.
