@@ -32,14 +32,10 @@ JD: 1<br>
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
-3 different titles. (all 'of Biostatistics')
-
-Assistant Professor: 12
-
-Professor: 13
-
-Associate Professor: 12
-
+3 different titles. (all 'of Biostatistics')<br>
+Assistant Professor: 12<br>
+Professor: 13<br>
+Associate Professor: 12<br>
 
 ####Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
 
