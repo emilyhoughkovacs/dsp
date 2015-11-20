@@ -9,6 +9,7 @@ with open('faculty.csv', 'rb') as faculty:
     degrees = {}
     titles = {}
     domains = {}
+    emails = []
     for name, degree, title, email in fy:
         for d in degree.split():
             d = d.translate(None, '.')
@@ -25,11 +26,14 @@ with open('faculty.csv', 'rb') as faculty:
             domains[e[2]] += 1
         else:
             domains[e[2]] = 1
+        emails.append(email)
 for k, v in degrees.iteritems():
     print k + ": " + str(v)
 print "=============="
 for k, v in titles.iteritems():
     print k + ": " + str(v)
+print "=============="
+print emails
 print "=============="
 for k, v in domains.iteritems():
     print k + ": " + str(v)
