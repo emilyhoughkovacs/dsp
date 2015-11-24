@@ -3,9 +3,9 @@
 The purpose of this question was to use the PMF and CDF to determine if the random number generator included in python is truly random. To do this, I created 1000 random numbers and then plotted their PMF and CDF using Allen Downey's `thinkplot` and `thinkstats2` packages.
 
 First, however, I practiced creating the PMF by hand using this methodology:
-```from collections import Counter
-import random```
-```rand1000 = [random.random() for x in range(1000)]```
+```from collections import Counter<br>
+import random```<br>
+```rand1000 = [random.random() for x in range(1000)]```<br>
 ```
 hist = {}
 pmf = {}
