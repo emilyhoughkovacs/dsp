@@ -15,6 +15,7 @@ biased = BiasPmf(pmf, label='biased numkdhh')
 What BiasPmf does is it multiplies each (parent's) response by itself - just like how the six children who respond '6' would be 6 x6 kids as opposed to their head of household responding 6 x1 times. It then normalizes the Pmf so it still sums to 1.
 
 The result is the following chart:
+![Biased PMF chart]
 (http://41.media.tumblr.com/77d79216d95dc1d2c387db186dd73fce/tumblr_nybt3j6hjA1rhoazgo1_400.png)
 As you can see, the probability that a household has 0 children is almost half. However, the biased PMF peaks at 2. Some special things to note: since anything times 0 is 0, the portion of the PMF under 0 has completely disappeared. Also, 6+ children is roughly 6 times higher, and 5 children is 5x greater than the actual number of households with this many children.
 
