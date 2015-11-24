@@ -14,9 +14,9 @@ biased = BiasPmf(pmf, label='biased numkdhh')
 ```
 What BiasPmf does is it multiplies each (parent's) response by itself - just like how the six children who respond '6' would be 6 x6 kids as opposed to their head of household responding 6 x1 times. It then normalizes the Pmf so it still sums to 1.
 
-The result is the following chart:
+The result is the following chart:<br>
 ![Biased PMF chart]
-(http://41.media.tumblr.com/77d79216d95dc1d2c387db186dd73fce/tumblr_nybt3j6hjA1rhoazgo1_400.png)
+(http://41.media.tumblr.com/77d79216d95dc1d2c387db186dd73fce/tumblr_nybt3j6hjA1rhoazgo1_400.png)<br>
 As you can see, the probability that a household has 0 children is almost half. However, the biased PMF peaks at 2. Some special things to note: since anything times 0 is 0, the portion of the PMF under 0 has completely disappeared. Also, 6+ children is roughly 6 times higher, and 5 children is 5x greater than the actual number of households with this many children.
 
 Downey mentions that you can also do the reverse from this. Suppose you had sampled children in the school and asked them the number of children in their home including themselves. Their principal could determine an unbiased PMF for the number of children per household given that data without speaking to the parents, by dividing 1 by each of the responses. This would 'unweight' each response from siblings. (Of course, this is assuming all siblings are school-aged and go to the same school.) This is an effective way to get unbiased data from biased data.
