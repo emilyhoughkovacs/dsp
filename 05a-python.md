@@ -36,12 +36,12 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> A list comprehension is a one-liner way to iterate through a list and create another list. You can also filter using `if`. An example would be `squares = [x**2 for x in range(100)]`. 
->> The same example, but using `map`:
->> `nums = range(100)`
->> `squares = map(x**2, nums)`
->> As you can see, using a list comprehension is a bit nicer as it only takes one line. You do not have to create the original list first.
->> An exmaple of how to use `filter` and `lambda` to print only odd numbers: `odds = filter(lambda x: x%2, nums)`
+>> A list comprehension is a one-liner way to iterate through a list and create another list. You can also filter using `if`. An example would be `squares = [x**2 for x in range(100)]`. <br>
+>> The same example, but using `map`:<br>
+>> `nums = range(100)`<br>
+>> `squares = map(x**2, nums)`<br>
+>> As you can see, using a list comprehension is a bit nicer as it only takes one line. You do not have to create the original list first.<br>
+>> An example of how to use `filter` and `lambda` to print only odd numbers: `odds = filter(lambda x: x%2, nums)`<br>
 
 ---
 
